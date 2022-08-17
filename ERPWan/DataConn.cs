@@ -409,7 +409,7 @@ namespace ERPWan
             List<List<String>> Registros = new List<List<String>>();
             try
             {
-                String query = "select ID, Fecha, Descripcion, Total, TipoPago,Costo from Ventas where Fecha BETWEEN '" +
+                String query = "select ID, Fecha, Descripcion, Total, TipoPago,Costo from Ventas where ID<1 and Fecha BETWEEN '" +
                     fechaInicio.ToString("yyyy-MM-dd") + "' and '" + fechaFin.AddDays(1).ToString("yyyy-MM-dd") + "'";
                 using (MySqlConnection c = new MySqlConnection(getConnString()))
                 {

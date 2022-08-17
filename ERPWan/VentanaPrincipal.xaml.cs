@@ -430,6 +430,7 @@ namespace ERPWan
         }
         void getInventarioData()
         {
+            dGInventario.Items.Clear();
             List<List<String>> FullItemsList = dc.GetFullProductos(" where Familia != 'Servicios' order by Stock DESC");
             if (FullItemsList.Count == 0)
             {
