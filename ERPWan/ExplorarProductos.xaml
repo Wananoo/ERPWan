@@ -1,0 +1,19 @@
+﻿<Window x:Name="windowExplorar" x:Class="ERPWan.ExplorarProductos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ERPWan"
+        mc:Ignorable="d"
+        Title="Explorar Productos" FontSize="20" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFC8C8C8" Height="406" Width="250">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnOK" Content="OK" Margin="0,0,10,10" Padding="5,5,5,5" TabIndex="4" HorizontalAlignment="Right" Width="39" Height="39" VerticalAlignment="Bottom" Click="btnOK_Click"/>
+        <TextBox x:Name="txbSearch" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" TextChanged="txbSearch_TextChanged"/>
+        <ListBox x:Name="listBoxProductos" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,44,10,54"/>
+        <Button x:Name="btnNuevoProducto" Content="Nuevo" Padding="5,5,5,5" HorizontalAlignment="Left" Margin="10,357,0,10" Click="btnNuevoProducto_Click"/>
+
+    </Grid>
+</Window>

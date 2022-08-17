@@ -1,0 +1,21 @@
+﻿<Window x:Name="windowSettings" x:Class="ERPWan.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ERPWan"
+        mc:Ignorable="d"
+        Title="Configuración" FontSize="20" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFC8C8C8" Height="186" Width="599">
+        <Label Content="DBIP" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="DBPass" HorizontalAlignment="Left" Margin="10,137,0,0" VerticalAlignment="Top"/>
+        <Label Content="DBName" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txbDBIP" HorizontalAlignment="Left" Margin="102,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" TabIndex="0"/>
+        <TextBox x:Name="txbDBName" HorizontalAlignment="Left" Margin="102,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" TabIndex="1"/>
+        <TextBox x:Name="txbDBPass" HorizontalAlignment="Left" Margin="102,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" TabIndex="3"/>
+        <Button x:Name="btnOK" Content="OK" HorizontalAlignment="Left" Margin="551,135,0,0" VerticalAlignment="Top" Padding="5,5,5,5" Click="btnOK_Click" TabIndex="4"/>
+        <Label Content="DBUser" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txbDBUser" HorizontalAlignment="Left" Margin="102,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" TabIndex="2"/>
+
+    </Grid>
+</Window>

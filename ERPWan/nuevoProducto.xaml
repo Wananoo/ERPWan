@@ -1,0 +1,26 @@
+﻿<Window x:Name="windowNuevoProd" x:Class="ERPWan.nuevoProducto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ERPWan"
+        mc:Ignorable="d"
+        Title="Nuevo Producto" FontSize="20" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFC8C8C8" Height="250" Width="662">
+        <Button x:Name="btnOK" Content="OK" Margin="0,0,10,10" Padding="5,5,5,5" TabIndex="4" HorizontalAlignment="Right" Width="50" Height="50" VerticalAlignment="Bottom" Click="btnOK_Click"/>
+        <TextBox x:Name="txbID" HorizontalAlignment="Left" Margin="102,29,0,0" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="229" Height="36" TextChanged="txbID_TextChanged"/>
+        <Label Content="Código:" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txbNombre" HorizontalAlignment="Left" Margin="102,70,0,0" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="229" Height="87" TextChanged="txbNombre_TextChanged"/>
+        <Label Content="Cantidad:" HorizontalAlignment="Left" Margin="10,162,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txbCant" HorizontalAlignment="Left" Margin="102,162,0,0" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="114" Height="36" TextChanged="txbCantidad_TextChanged"/>
+        <Label Content="Familia:" HorizontalAlignment="Left" Margin="10,204,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txbFamilia" HorizontalAlignment="Left" Margin="102,0,0,11" TextWrapping="Wrap" Text="&#xA;" Width="229" Height="36" VerticalAlignment="Bottom" TextChanged="txbFamilia_TextChanged"/>
+        <Label Content="Precio Compra:" HorizontalAlignment="Left" Margin="336,29,0,0" VerticalAlignment="Top"/>
+        <Label Content="Precio c/IVA:" HorizontalAlignment="Left" Margin="336,67,0,0" VerticalAlignment="Top"/>
+        <Label Content="Precio Venta:" HorizontalAlignment="Left" Margin="336,109,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txbPrecioNeto" Margin="0,30,10,0" TextWrapping="Wrap" Text="&#xA;" Height="36" VerticalAlignment="Top" HorizontalAlignment="Right" Width="172" TextChanged="txbPrecioNeto_TextChanged"/>
+        <TextBox x:Name="txbPCIVA" Margin="0,71,10,0" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Height="36" HorizontalAlignment="Right" Width="172" TextChanged="txbPCIVA_TextChanged" IsEnabled="False"/>
+        <TextBox x:Name="txbPrecioVenta" Margin="0,112,10,102" TextWrapping="Wrap" Text="&#xA;" HorizontalAlignment="Right" Width="172" TextChanged="txbPrecioVenta_TextChanged"/>
+    </Grid>
+</Window>
